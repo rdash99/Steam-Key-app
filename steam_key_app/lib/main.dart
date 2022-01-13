@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:steam_key_app/page_navigation/tabs_page.dart';
+import 'package:steam_key_app/pages/home_page.dart';
+import 'package:steam_key_app/pages/image_page.dart';
 
 void main() {
   runApp(App());
@@ -14,6 +16,8 @@ class App extends StatelessWidget {
       ),
       routes: {
         "/": (context) => TabsPage(),
+        "/home": (context) => HomeRoute(),
+        "/image": (context) => ImageRoute(),
       },
       initialRoute: "/",
     );
